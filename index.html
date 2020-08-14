@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration | Login Form</title>
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kite+One&family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="top__nav">
-      <h1>Edem</h1>
-      <a href="#" class="btn">Sign in</a>
-    </div>
-    <div class="container">
-      <h3>Create your account</h3>
-      <p>Registration is easy.</p>
-      <form action="#" id="form" class="form">
-        <div class="form__group">
-          <label for="name" class="">Name</label>
-          <input type="text" id="name" name="name" />
-          <span class="helper-text"></span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration | Login Form</title>
 
-        <div class="form__group">
-          <label for="email" class="">Email</label>
-          <input type="email" id="email" name="email" />
-          <span class="helper-text"></span>
-        </div>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Lato&display=swap" rel="stylesheet" />
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="form__group">
-          <label for="password" class="">Password</label>
-          <input type="password" id="password" name="password" />
-          <span class="helper-text"></span>
-        </div>
+<body>
+  <div class="top__nav">
+    <h1>Edem</h1>
+    <a href="#" class="btn">Sign in</a>
+  </div>
+  <div class="container">
+    <h3>Create your account</h3>
+    <p>Registration is easy.</p>
+    <form action="#" id="form" class="form">
+      <div class="form__group">
+        <label for="name" class="">Name</label>
+        <input type="text" id="name" name="name" onfocusout='validateName()' />
+        <span class="helper-text"></span>
+      </div>
 
-        <div class="form__group">
-          <label for="passwordConfirm" class="">Confirm Password</label>
-          <input type="password" id="passwordConfirm" name="passwordConfirm" />
-          <span class="helper-text"></span>
-        </div>
+      <div class="form__group">
+        <label for="email" class="">Email</label>
+        <input type="email" id="email" name="email" onfocusout='validateEmail()' />
+        <span class="helper-text"></span>
+      </div>
 
-        <button class="btn__large">Register</button>
-      </form>
-      <h4>OR</h4>
+      <div class="form__group">
+        <label for="password" class="">Password</label>
+        <input type="password" id="password" name="password" onfocusout='validatePassword()' />
+        <span class="helper-text"></span>
+      </div>
 
-      <a href="#" class="btn__large">
-        <img src="./images/google.svg" alt="google icon" class="login__icon" />
-        <span>Continue with Google</span></a
-      >
+      <div class="form__group">
+        <label for="passwordConfirm" class="">Confirm Password</label>
+        <input type="password" id="passwordConfirm" name="passwordConfirm" onfocusout='validateConfirmPassword()' />
+        <span class="helper-text"></span>
+      </div>
 
-      <a href="#" class="btn__large">
-        <img
-          src="./images/facebook.svg"
-          alt="facebook icon"
-          class="login__icon"
-        />
-        <span>Continue with Facebook</span></a
-      >
+      <button class="btn__large">Register</button>
+    </form>
+    <h4>OR</h4>
 
-      <a href="#" class="btn__large"
-        ><img src="./images/company.svg" alt="apple icon" class="login__icon" />
-        <span>Continue with Apple</span></a
-      >
-    </div>
+    <a href="#" class="btn__large">
+      <img src="./images/google.svg" alt="google icon" class="login__icon" />
+      <span>Continue with Google</span></a>
 
-    <!-- JavaScript -->
-    <script src="index.js"></script>
-  </body>
+    <a href="#" class="btn__large">
+      <img src="./images/facebook.svg" alt="facebook icon" class="login__icon" />
+      <span>Continue with Facebook</span></a>
+
+    <a href="#" class="btn__large"><img src="./images/company.svg" alt="apple icon" class="login__icon" />
+      <span>Continue with Apple</span></a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+
 </html>
